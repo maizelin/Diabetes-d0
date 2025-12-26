@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>糖尿病管理APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>糖尿病管理APP</h1>
+    <label for="patientSelect">選擇病患：</label>
+    <select id="patientSelect">
+        <option value="682734">A</option>
+        <option value="682743">B</option>
+        <option value="682755">C</option>
+        <option value="682762">D</option>
+        <option value="682795">E</option>
+    </select>
+    <button id="loadPatient">載入資料</button>
+    <div id="patientData"></div>
+
+    <script>
+        document.getElementById('loadPatient').addEventListener('click', function() {
+            const patientId = document.getElementById('patientSelect').value;
+            document.getElementById('patientData').innerHTML = `<p>正在載入病患 ${patientId} 的資料...</p>`;
+        });
+    </script>
+</body>
+</html>

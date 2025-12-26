@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>病患資料</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>病患資料</h1>
+    <div id="patientInfo"></div>
+    <div id="clinicalData"></div>
+
+    <script>
+        document.getElementById('patientInfo').innerHTML = '<p>姓名：林美玲</p><p>性別：女</p><p>出生年月日：1967-05-10</p>';
+        document.getElementById('clinicalData').innerHTML = `
+            <h2>臨床資料</h2>
+            <ul>
+                <li>診斷：第2型糖尿病</li>
+                <li>HbA1c：8.5%</li>
+                <li>eGFR：80 mL/min/1.73m²</li>
+                <li>用藥：Metformin 1000 mg bid</li>
+            </ul>
+        `;
+    </script>
+</body>
+</html>
